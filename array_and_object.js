@@ -20,7 +20,7 @@ let mode = 'tambah'
 // READ
 // arrow function
 // Fungsi menampilkan karyawan ke tabel
-// MENAMPILKAN SISWA
+// MENAMPILKAN KARYAWAN
 const tampilkanKaryawan = () => {
 // mengakses dom
 const tblSiswa = document.getElementById('tblKaryawan');
@@ -46,7 +46,7 @@ for (let idx in daftarKaryawan) {
 
 
 // CREATE
-// Fungsi untuk menambah siswa ke daftar dan memperbarui tabel
+// Fungsi untuk menambah karyawan ke daftar dan memperbarui tabel
 // MENAMBAH KARYAWAN
 const tambahKaryawan = () => {
 const nama = document.getElementById('txtNama').value;
@@ -103,7 +103,7 @@ mode = indexEdit
 };
 
 
-// Fungsi untuk mencari indeks siswa berdasarkan nama
+// Fungsi untuk mencari indeks karyawan berdasarkan nama
 // MENCARI INDEX NAMA
 const cariIndex = (nama) => {
 // tampilkan index jika nama karyawan === nama
