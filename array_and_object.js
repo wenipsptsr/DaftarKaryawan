@@ -24,19 +24,19 @@ let mode = 'tambah'
 const tampilkanKaryawan = () => {
 // mengakses dom
 const tblSiswa = document.getElementById('tblKaryawan');
-  tblSiswa.innerHTML = '<tr><th>No</th><th>Nama</th><th>Jenis Kelamin</th><th>Masa Kerja</th><th>Gaji</th><th>Edit</th><th>Hapus</th></tr>';
+  tblSiswa.innerHTML = '<tr><th class="text-center">No</th><th class="text-center">Nama</th><th class="text-center">Jenis Kelamin</th><th class="text-center">Masa Kerja</th><th class="text-center">Gaji</th><th class="text-center">Edit</th><th class="text-center">Hapus</th></tr>'
   
 for (let idx in daftarKaryawan) {
 // menambah isinya
   tblSiswa.innerHTML += `
     <tr>
-      <td>${parseInt(idx) + 1}</td>
-      <td>${daftarKaryawan[idx].nama}</td>
-      <td>${daftarKaryawan[idx].jenKel}</td>
-      <td>${daftarKaryawan[idx].masaKerja}</td>
-      <td>${daftarKaryawan[idx].gaji}</td>
-      <td><button class="btn btn-warning" onclick="editKaryawan('${daftarKaryawan[idx].nama}')">Edit</button></td>
-      <td><button class="btn btn-danger" onclick="hapusKaryawan('${daftarKaryawan[idx].nama}')">Delete</button></td>
+      <td class="text-center">${parseInt(idx) + 1}</td>
+      <td class="text-center">${daftarKaryawan[idx].nama}</td>
+      <td class="text-center">${daftarKaryawan[idx].jenKel}</td>
+      <td class="text-center">${daftarKaryawan[idx].masaKerja}</td>
+      <td class="text-center">${daftarKaryawan[idx].gaji}</td>
+      <td class="text-center"><button class="btn btn-warning" onclick="editKaryawan('${daftarKaryawan[idx].nama}')">Edit</button></td>
+      <td class="text-center"><button class="btn btn-danger" onclick="hapusKaryawan('${daftarKaryawan[idx].nama}')">Delete</button></td>
     </tr>`;
   }
 
